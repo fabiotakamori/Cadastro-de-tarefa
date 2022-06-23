@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class AllTarefaController extends Controller
 {
     public function index(){
-        echo "Hello world";
+       
+        return view('index');
     }
 }

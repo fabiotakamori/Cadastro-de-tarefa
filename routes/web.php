@@ -14,10 +14,10 @@ use App\Http\Controllers\AllTarefaController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
-
+*/
 /*o index da rota, indica o método*/
-Route::get('/todasTarefas',[AllTarefaController::class, "index"]);
+Route::get('/',[AllTarefaController::class, "index"]);
