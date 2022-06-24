@@ -13,9 +13,15 @@
                 App Lista de Tarefas
             </h2>
             <div id="app">
-                <home-component/>
-            </div>
+            <home-component/>
+            @foreach($series as $serie)
+                <li class="list-group-item">{{ $serie->tarefa }}</li>
+                
+            @endforeach
+               
 
+            </div>
             <script src="{{asset('js/app.js')}}"></script>
     </body>
+
 </html>
